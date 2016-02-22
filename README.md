@@ -1,5 +1,7 @@
 # Xamarin Forms Android NavigationPage problems
 
+Using: Forms, TabbedPage, NavigationPage (also Material Design package, but not needed), XAML, data binding
+
 Effect: All pages added to the NavigationPage seem to be rendered and freezes the application. With Material Design package this will eventual crash the application (a crash has also occurred without Material Design, but it's more difficult).
 
 Reproduce:
