@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="TabbedTest.List1aView"
+	Title="List 1 A">
+	<ContentPage.Content>
+		<ListView
+			x:Name="list1a"
+			RowHeight="70">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<ViewCell.View>
+							<StackLayout
+								Orientation="Horizontal"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="FillAndExpand"
+								Padding="10,0,0,0">
+								<StackLayout
+									Orientation="Vertical"
+									HorizontalOptions="StartAndExpand"
+									VerticalOptions="CenterAndExpand">
+									<Label
+										Text="{Binding Name}"
+										Style="{DynamicResource SubtitleStyle}"
+										HorizontalOptions="StartAndExpand"
+										VerticalOptions="Start" />
+									<Label
+										Text="{Binding Description}"
+										HorizontalOptions="StartAndExpand"
+										VerticalOptions="Start" />
+								</StackLayout>
+							</StackLayout>
+						</ViewCell.View>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>
